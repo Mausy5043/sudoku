@@ -82,10 +82,8 @@ def sd_solve(R, C, s):
 R, C = sd_genmat()
 for line in sys.stdin:
 	if len(line) >= 81:
-                print line
-		#for i in range(10):
+		print line
 		ret = sd_solve(R, C, line)
 		for j in range(len(ret)):
 			print(''.join(map(str, ret[j])))
 		print('')
-
