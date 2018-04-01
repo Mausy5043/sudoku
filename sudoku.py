@@ -35,7 +35,10 @@ def sd_update(R, C, sr, sc, r, v):
         sr[rr] -= 1
         if sr[rr] == 0:
           p = C[rr]
-          sc[p[0]] += 1; sc[p[1]] += 1; sc[p[2]] += 1; sc[p[3]] += 1;
+          sc[p[0]] += 1
+          sc[p[1]] += 1
+          c[p[2]] += 1
+          sc[p[3]] += 1
   return m, m_c
 
 def sd_solve(R, C, s):
@@ -71,7 +74,8 @@ def sd_solve(R, C, s):
       r2_ = 9
       for r2 in range(cr[i] + 1, 9):
         if sr[R[c][r2]] == 0:
-          r2_ = r2; break
+          r2_ = r2
+          break
       if r2_ < 9:
         m, cc[i+1] = sd_update(R, C, sr, sc, R[c][r2], 1)
         cr[i], d, i = r2, 1, i + 1
