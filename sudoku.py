@@ -6,7 +6,7 @@ def sd_genmat():
   for i in range(9):
     for j in range(9):
       for k in range(9):
-        C.append([ 9*i+j, i//3*27+j//3*9+k+81, 9*i+k+162, 9*j+k+243 ])
+        C.append([9*i+j, i//3*27+j//3*9+k+81, 9*i+k+162, 9*j+k+243])
   R = [[] for c in range(324)]
   for r in range(729):
     for c2 in range(4):
