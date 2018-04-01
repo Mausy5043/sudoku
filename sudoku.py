@@ -16,7 +16,7 @@ def sd_genmat():
 def sd_update(R, C, sr, sc, r, v):
   m, m_c = 10, 0
   for c2 in range(4):
-    sc[C[r][c2]] += v<<7
+    sc[C[r][c2]] += v << 7
   for c2 in range(4):
     c = C[r][c2]
     if v > 0:
@@ -88,10 +88,11 @@ def sd_solve(R, C, s):
       y.append(out[j])
     for j in range(i):
       r = R[cc[j]][cr[j]]
-      y[r//9] = r%9 + 1
+      y[r // 9] = r % 9 + 1
     ret.append(y)
     i, d = i - 1, -1
   return ret
+
 
 R, C = sd_genmat()
 for line in sys.stdin:
