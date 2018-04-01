@@ -51,7 +51,7 @@ def sd_solve(R, C, s):
 		out.append(a + 1)
 	i, m, d = 0, 10, 1
 	while True:
-		while 0 <= and i < (81 - hints):
+		while i >= 0 and i < 81 - hints:
 			if d == 1:
 				if m > 1:
 					for c in range(324):
