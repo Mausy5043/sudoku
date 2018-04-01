@@ -1,5 +1,5 @@
 #! /usr/bin/python
-import sys, string
+import sys
 
 def sd_genmat():
 	r, C = 0, []
