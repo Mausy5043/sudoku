@@ -37,7 +37,7 @@ def sd_update(R, C, sr, sc, r, v):
           p = C[rr]
           sc[p[0]] += 1
           sc[p[1]] += 1
-          c[p[2]] += 1
+          sc[p[2]] += 1
           sc[p[3]] += 1
   return m, m_c
 
